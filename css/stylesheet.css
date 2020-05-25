@@ -1,0 +1,260 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700");
+
+html{
+	background-color:#fafafa
+}
+
+body{
+	margin:0;
+}
+
+h1,h2,h3,p{
+	font-family: Lato;
+	color:#646464;
+}
+
+.fitnessbutton{
+	display: block;
+	background: #2A9D8F;
+	border-radius: 4px;
+	font-family: Lato;
+	padding:1rem;
+	color:white;
+	box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.11);
+	font-size: 1rem;
+	text-align: center;
+	bottom: 0;
+}
+.cell{
+	margin:1rem;
+	background-color: white;
+}
+.navbar{
+	height:100%;
+	width: 20%;
+	float: left;
+}
+.container {
+	position: relative;
+	height:90vh;
+	margin: 2rem;
+}
+.grid2-vert{
+	height: 100%;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+.grid2-hor{
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.grid2-horsplit{
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.top-split{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+.bot-split{
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+}
+
+.grid4-hor{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	border-style: solid;
+	border-radius: 1px;
+	border-color: #2A9D8F;
+}
+
+.grid2x3{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.grid3-hor{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid2-food{
+	display:grid;
+	grid-template-columns: 2fr 1fr;
+}
+.centered p, .centered h2, .centered h3{
+	text-align: center;
+}
+.centered img, .centered svg{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.grid3-vert{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.grid3-cal{
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	align-items: center;
+}
+
+#eatencal{
+	color:#2A9D8F;
+}
+
+#burnedcal{
+	color:#F4A261;
+}
+
+.small-left{
+	padding: 3rem;
+}
+
+.daysofweek{
+	display: grid;
+	grid-template-columns: repeat(7,1fr);
+	background-color: transparent;
+}
+
+.day {
+	min-width: 5rem;
+	margin: 1rem;
+	border-style: solid;
+	border-radius: 4px;
+	padding: 1rem;
+	background-color: white;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.11);
+}
+
+.green {
+	box-shadow: 0 0.7rem 1.5rem rgba(0, 0, 0, 0.11);
+}
+
+.inactive {
+	box-shadow: none;
+}
+
+
+.day p {
+	text-align: center;
+}
+
+.tracking-ring{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+}
+
+.tracking-ring p{
+	color: #2A9D8F;
+	text-align: left;
+}
+
+.grid-note{
+	display: grid;
+	grid-template-rows: repeat(7,1fr);
+	align-items: center;
+}
+
+.note-card{
+	min-width: 5rem;
+	margin: 1rem;
+	border-style: solid;
+	border-radius: 4px;
+	max-width: 20rem;
+	max-height: 12rem;
+}
+.add{
+	border-style:none;
+}
+
+.food-list{
+	display: grid;
+	grid-template-rows: repeat(3,1fr);
+	background-color: #fafafa; 
+	float: left;
+}
+.note-card img{
+	width:100%;
+}
+.grid-toolbar{
+	display:grid;
+	grid-template-rows: 0fr 1fr;
+}
+
+.note-taking h1, .note-taking h2, .note-taking h3, .note-taking p{
+	color:black;
+	
+}
+
+.green , .green p{
+	border-color:#2A9D8F;
+	color:#2A9D8F;
+}
+
+.red, .red p{
+	border-color:#E76F51;
+	color:#E76F51;
+}
+
+.yellow, .yellow p{
+	border-color:#F4A261;
+	color:#F4A261;
+}
+.inactive, .inactive p{
+	border-color:#6464644d;
+	color:#6464647d;
+	
+}
+.active, .active p{
+	border-color:#2A9D8F;
+	background-color: #2A9D8F;
+	color:white;
+	font-weight: bolder;
+}
+
+.returnbutton{
+	color:#2A9D8F;
+	background-color: #fafafa;
+	text-align: left;
+	font-family: Lato;
+	padding:1rem;
+	font-size: 1rem;
+}
+@media (max-width:1024px){
+	.top-split{
+		grid-template-columns: 1fr;
+	}
+	.small-left{
+		align-content: center;
+	}
+	.fitnessbutton{
+		width:75%;
+		
+	}
+}
+
+@media (max-width:768px){
+	.daysofweek{
+		grid-template-columns:1fr 
+	}
+	.bot-split{
+		grid-template-rows: 2fr;
+	}
+	.grid4-hor{
+		grid-template-columns:1fr 1fr;
+	}
+	.fitnessbutton{
+		width:100%;
+	}
+
+}
